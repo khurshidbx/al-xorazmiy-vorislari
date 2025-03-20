@@ -1,7 +1,7 @@
 <template>
-    <div class="p-[36px] border border-[1px] border-[red] flex justify-between header items-center ">
+    <div class="p-[36px] border flex justify-between header items-center ">
         <div class="w-[372px]">
-            <img src="../../assets/svg/alxorazmiy-vorislarir-logo.svg" alt="logo">
+            <img src="../../assets/svg/alxorazmiy-vorislari-logo.svg" alt="logo">
         </div>
         <ul class="flex justify-between gap-[33px]">
             <MenuItem3 v-for="item in menuItems" :key="item" :item="item"></MenuItem3>
@@ -41,6 +41,7 @@ export default {
     .actions {
         display: flex;
         gap: 20px;
+
         .loginBtn {
             background: var(--Schemes-Primary, #65558F);
             font-family: Comfortaa;

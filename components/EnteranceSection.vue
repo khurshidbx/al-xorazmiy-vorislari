@@ -1,7 +1,10 @@
 <template>
-    <div class="container">
-        <div class="enterance-section">
-            <img src="../assets/svg/top-img" alt="">
+
+    <div class="enterance-section">
+
+        <img class="top-image" src="../assets/svg/top-image.jpg" alt="top-image">
+        <img class="bottom-image" src="../assets/svg/bottom-im.jpg" alt="top-image">
+        <div class="container">
             <div class="left-content">
                 <div class="content-wrapper">
                     <h1>Muhammad <br>
@@ -46,6 +49,21 @@
     width: 100%;
     display: flex;
     padding: 120px 0;
+    position: relative;
+
+    .container {
+        display: flex;
+    }
+
+    .top-image {
+        position: absolute;
+        top: 0;
+    }
+
+    .bottom-image {
+        position: absolute;
+        bottom: 0;
+    }
 
     .left-content {
         width: 45%;
@@ -93,6 +111,7 @@
             padding: 24px 36px;
             border: 2px solid #65558F;
             border-radius: 50px;
+            margin-top: 35px;
         }
     }
 
